@@ -1,0 +1,1 @@
+export const serverUrl="https://contact-manager-server-zg69.onrender.com"
