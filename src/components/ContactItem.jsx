@@ -10,7 +10,7 @@ const ContactItem = ({ contact, updateContact, deleteContact }) => {
   };
 
   return (
-    <div className="border border-dark text-justify p-3 rounded  bg-light">
+    <div style={{background:'linear-gradient(90deg, rgb(223, 118, 142) 0%, rgba(239,209,175,1) 77%)'}} className="border border-dark text-center text-justify p-3 rounded bg-light">
       {isEditing ? 
         <>
           <input className="mb-2 rounded p-2" type="text" value={updatedContact.name} onChange={(e) => setUpdatedContact({ ...updatedContact, name: e.target.value })}/>
@@ -23,7 +23,7 @@ const ContactItem = ({ contact, updateContact, deleteContact }) => {
           <h4>{contact.name}</h4>
           <p>{contact.email}</p>
           <p>{contact.phone}</p>
-          <button className="btn btn-warning rounded p-3" onClick={() => setIsEditing(true)}>Edit</button>
+          <button className="btn btn-info rounded p-3" onClick={() => setIsEditing(true)}>Edit</button>
         </>
       }
       <button className="btn btn-danger rounded p-3 ms-3" onClick={() => deleteContact(contact.id)}>Delete</button>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import ContactList from "./components/ContactList"
 import Modal from 'react-bootstrap/Modal';
 import "./App.css"
+import 'animate.css'
 import { Form } from "react-bootstrap";
 import { deleteContactAPI, getContactAPI, saveContactAPI, updateContactAPI } from "./services/allApis";
 import intro from './assets/intro.gif'
@@ -84,11 +85,11 @@ const App = () => {
 
       {/* into */}
       <div style={{background:'linear-gradient(to bottom, rgba(233,171,148,1) 25%, rgb(233, 164, 148) 67%,transparent)'}} className="w-100 mb-3 d-flex justify-content-around align-items-center">
-        <div className="w-25 ms-5">
-          <h1 className="text-primary fw-bold">Welcome to Contact Manager....</h1>
-          <h5 className="text-white fw-bold">Create, edit and delete contacts. Let's get in contact with everyone!!!</h5>
+        <div className="w-25 ms-5 p-3">
+          <h1 className="text-primary fw-bold animate__animated  animate__bounceInDown">Welcome to Contact Manager....</h1>
+          <h5 className="text-white fw-bold animate__animated animate__bounceInLeft">Create, edit and delete contacts. Let's get in contact with everyone!!!</h5>
         </div>
-        <div>
+        <div className="animate__animated animate__bounceIn">
           <img className="img-fluid" src={intro} alt="" />
         </div>
       </div>
@@ -108,6 +109,7 @@ const App = () => {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        style={{backgroundColor:'rgba(255, 255, 255, 0.4)'}}
       >
         <Modal.Header closeButton>
           <Modal.Title>ADD CONTACT</Modal.Title>
