@@ -84,7 +84,7 @@ const App = () => {
 
 
       {/* into */}
-      <div style={{background:'linear-gradient(to bottom, rgba(233,171,148,1) 25%, rgb(233, 164, 148) 67%,transparent)'}} className="w-100 mb-3 d-flex justify-content-around align-items-center">
+      <div style={{background:'linear-gradient(to bottom, rgba(233,171,148,1) 25%, rgb(233, 164, 148) 79%,transparent)',minHeight:'70vh'}} className="w-100 mb-3 d-flex justify-content-around align-items-center">
         <div className="w-25 ms-5 p-3">
           <h1 className="text-primary fw-bold animate__animated  animate__bounceInDown">Welcome to Contact Manager....</h1>
           <h5 className="text-white fw-bold animate__animated animate__bounceInLeft">Create, edit and delete contacts. Let's get in contact with everyone!!!</h5>
